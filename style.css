@@ -96,6 +96,40 @@ line-height: 19px;
 justify-content: center;
 }
 
+.ft{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+
+position: absolute;
+width: 700px;
+height: 0px;
+left: 148px;
+top: 630px;
+
+/* Inside Auto Layout */
+
+flex: auto;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+
+color: #F3F5FC;
+font-style: italic;
+font-weight: 600;
+font-size: 28px;
+line-height: 2px;
+}
+.ft a{
+text-decoration: none;    
+color: #F3F5FC;
+font-style: italic;
+font-weight: 600;
+font-size: 28px;
+line-height: 2px;
+}
+
 .text-input {
 /* Ingresa tu texto! */
 text-transform:lowercase;
@@ -386,6 +420,11 @@ justify-content: center;
         height:65px;
     }
 
+    .ft{
+        left:7.3rem;
+        top:39.27rem;
+    }
+
     .message-box{
         top: 1.5rem;
         height:38rem;
@@ -500,6 +539,10 @@ justify-content: center;
         flex: 1 1 auto;
         color: #F3F5FC;
     }
+    .ft{
+        left:3rem;
+        top:69.5rem;
+    }
 } 
 @media only screen and (min-device-width : 300px) and (max-device-width : 480px){ 
     main{
@@ -527,7 +570,7 @@ justify-content: center;
     }
 
     .form-group{
-    left:2.3rem;
+    left:1.2rem;
     top:24rem;
     }
 
@@ -597,5 +640,14 @@ justify-content: center;
     left:1.5rem;
     font-size: 14px;
     overflow-wrap: break-word;
+    }
+
+    .ft{
+        font-size: 17px;
+        left:-1rem;
+        top:49rem;
+    }
+    .ft a{
+        font-size: 17px;
     }
 }
