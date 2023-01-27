@@ -578,7 +578,13 @@ justify-content: center;
     font-size:12px;
     }
 
-    .btn-encriptar,.btn-desencriptar{
+    .btn-encriptar{
+    width: 320px;
+    font-size:20px;
+    height:65px;
+    margin: 0.5rem;
+    }
+    .btn-desencriptar{
     width: 320px;
     font-size:20px;
     height:65px;
