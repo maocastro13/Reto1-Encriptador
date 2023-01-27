@@ -9,30 +9,6 @@ const btnCopiar = document.querySelector("#btn-copiar");
 document.getElementById("div-aparece").style.display = 'none';
 inputverificar();
 
-document.getElementById('btn-encriptar').ontouchend = (e) => {
-  e.preventDefault();
-  const textoEncriptado = encriptar(input.value.toLowerCase());
-  mensaje.value = textoEncriptado;
-  input.value = "";
-  aparece()
-}
-
-document.getElementById('btn-desencriptar').ontouchend = (e) => {
-  e.preventDefault();
-  const textoDesencriptado = desencriptar(input.value.toLowerCase());
-  mensaje.value = textoDesencriptado;
-  input.value = "";
-  aparece()
-}
-
-document.getElementById('btn-copiar').ontouchend = (e) => {
-  e.preventDefault();
-  const mensaje = document.querySelector("#mensaje");
-  mensaje.select();
-  navigator.clipboard.writeText(mensaje.value)
-  mensaje.value = "";
-}
-
 //caputura el id en el momento del click y direcciona el programa para el método que encripta el texto
 document.getElementById('btn-encriptar').onclick = (e) => {
   e.preventDefault();
